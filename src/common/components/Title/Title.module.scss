@@ -1,0 +1,24 @@
+.title {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(21 / 18 * 100%);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    top: 26px;
+    left: 0;
+    background-color: #00A4E5;
+  }
+  &--stripe{
+    &:before{
+      left: 50%;
+      transform: translate(-50%,50%);
+    }
+  }
+}
