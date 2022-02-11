@@ -10,12 +10,12 @@ export const Header = () => {
                 <div className={`${moduleClasses["header__wrapper"]}`}>
                     <img className={moduleClasses["header__logo"]} src={logo} alt={"logo"}/>
                     <div className={moduleClasses["header__contacts"]}>
-                        <div>
-                            <span>Пишите нам на email</span>
+                        <div  className={moduleClasses["header__email"]}>
+                            <p>Пишите нам на email</p>
                             <a href={'info@diagnistics.by'}>info@diagnistics.by</a>
                         </div>
-                        <div>
-                            <span>Есть вопросы? Звоните!</span>
+                        <div  className={moduleClasses["header__tel"]}>
+                            <p>Есть вопросы? Звоните!</p>
                             <a href={'+375 (29) 456-45-45'}>+375 (29) 456-45-45</a>
                         </div>
                     </div>

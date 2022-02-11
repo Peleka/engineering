@@ -1,14 +1,14 @@
 import React from "react";
-import {Connect} from "./Connect/Connect";
 import {About} from "./About/About";
 import {Services} from "./Services/Services";
+import {Stages} from "./StagesOfWork/Stages";
 
 export const Main = () => {
     return (
         <>
             <About/>
             <Services/>
-            <Connect/>
+            <Stages/>
         </>
     )
 }

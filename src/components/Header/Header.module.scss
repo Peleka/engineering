@@ -7,4 +7,27 @@
     justify-content: space-between;
     margin: 25px 0 30px 0;
   }
+
+  &__contacts{
+    width: 460px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 1);
+  }
+  &__email{
+
+    & a {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #FEE040;
+    }
+  }
+  &__tel {
+    text-align: end;
+    & a{
+      font-size: 20px;
+    }
+
+  }
 }

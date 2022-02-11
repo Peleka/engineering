@@ -1,4 +1,5 @@
 .banner {
+  position: relative;
   text-align: center;
   padding: 40px 0 65px 0;
   background-image: linear-gradient(180deg, rgba(0, 78, 134, 0.8) 0%, rgba(10, 65, 104, 0.8) 100%), url('image/header_bgr.png');
@@ -14,44 +15,58 @@
     margin-bottom: 10px;
   }
 
-  &__content {
-    min-height: 768px;
+  &__wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    text-align: start;
+
+    &--end {
+      margin-top: 235px;
+    }
+  }
+
+  &__block-text {
+    max-width: 580px;
+    text-align: start;
+    font-size: 42px;
+    line-height: 1.2;
     color: #fff;
-    @media (max-width: 1024px) {
-      min-height: 568px;
-    }
-    @media (max-width: 768px) {
-      min-height: 460px;
-    }
-  }
-
-  &__logo {
-
-  }
-
-  &__title {
-    font-family: "Bebas Neue";
-    font-size: 60px;
-    letter-spacing: 5px;
-    line-height: 70px;
-    text-transform: uppercase;
-
-    @media (max-width: 768px) {
-      font-size: 44px;
-      line-height: 44px;
-    }
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 1.2;
+    margin-top: 40px;
+    max-width: 360px;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #fff;
+    &--small {
+      font-size: 15px;
+    }
   }
 
   &__photo-men {
     border-radius: 50%;
+  }
+
+  &__steps {
+    display: flex;
+    align-items: self-end;
+  }
+  &__image {
+    margin-right: 20px;
+  }
+
+  &__item {
+    display: flex;
+    max-width: 260px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  &__video {
+    position: absolute;
+    bottom: 150px;
+    right: 250px;
   }
 }
