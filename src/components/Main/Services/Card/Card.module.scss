@@ -1,3 +1,25 @@
 .card {
-  display: flex;
+  margin: 29px 40px;
+  text-align: start;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  color: #fff;
+  &__image {
+    width: 400px;
+    height: 190px;
+  }
+  &__title {
+    font-size: 24px;
+    line-height: 1.13;
+  }
+  &__text {
+    margin: 20px 0 30px;
+  }
+  &__subtext {
+    color: #FEE040;
+    text-transform: uppercase;
+    &:after {
+      content: url("./images/arrow (Stroke).svg");
+    }
+  }
 }
