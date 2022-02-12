@@ -15,15 +15,15 @@ export const About = () => {
                         3 ГИПа (главных инженеров проектов) с опытом работы от 6 лет и 2 штатных сотрудника для
                         камеральных работ</p>
                 </div>
-            </div>
-            <img className={moduleClasses["sectionAbout__image"]} src={tv} alt={"tv"}/>
-            <div className={moduleClasses["sectionAbout__advantages"]}>
-                <ul> Вы и Ваши архитекторы получаете:
-                    <li>Отчет на который на 100% можно положиться </li>
-                    <li>Экономию времени и прогнозируемость сроков</li>
-                    <li>Предварительные результаты сразу на месте</li>
+                <img className={moduleClasses["sectionAbout__image"]} src={tv} alt={"tv"}/>
+                <ul className={moduleClasses["sectionAbout__advantages"]}>
+                    Вы и Ваши архитекторы получаете:
+                    <li className={moduleClasses["sectionAbout__item"]}>Отчет на который на 100% можно положиться </li>
+                    <li className={moduleClasses["sectionAbout__item"]}>Экономию времени и прогнозируемость сроков</li>
+                    <li className={moduleClasses["sectionAbout__item"]}>Предварительные результаты сразу на месте</li>
                 </ul>
             </div>
+
         </div>
     )
 }

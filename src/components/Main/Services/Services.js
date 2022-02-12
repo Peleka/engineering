@@ -33,7 +33,7 @@ export const Services = () => {
                     <p className={moduleClasses["services__text"]}>Выполняем как комплексное обследование, так и отдельные виды работ</p>
                 </div>
               <div className={moduleClasses["services__cards"]}>
-                    <HorizontalScroll>
+
                         {cardsList.map(card =>(
                             <Card
                                 key={card.id}
@@ -44,7 +44,7 @@ export const Services = () => {
                                 subtext={card.subtext}
                             />
                         ))}
-                    </HorizontalScroll>
+
                 </div>
             </div>
         </div>
