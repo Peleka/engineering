@@ -3,9 +3,9 @@ import moduleClasses from './Banner.module.scss'
 import globalClasses from "../../App.module.scss"
 import {Button} from "../../common/components/Button/Button";
 import photo from "../../images/706181.jpg"
-import one from "../../images/01 (Stroke).svg"
-import two from "../../images/02 (Stroke).svg"
-import three from "../../images/03 (Stroke).svg"
+import one from "../../images/01.svg"
+import two from "../../images/02.svg"
+import three from "../../images/03.svg"
 import {Header} from "../Header/Header";
 
 export const Banner = () => {
