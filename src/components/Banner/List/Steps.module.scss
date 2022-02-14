@@ -1,0 +1,18 @@
+.steps {
+  display: flex;
+  align-items: self-end;
+
+  &__item {
+    display: flex;
+    max-width: 302px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+  &__image {
+    margin-right: 20px;
+  }
+  &__text {
+    line-height: 1.4;
+  }
+}

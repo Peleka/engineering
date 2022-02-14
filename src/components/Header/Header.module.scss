@@ -1,33 +1,32 @@
 .header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 152px 0;
 
   &__wrapper {
+    min-width: 460px;
     display: flex;
-    min-height: 65px;
-    align-items: start;
     justify-content: space-between;
-    margin: 25px 0 30px 0;
   }
 
-  &__contacts{
-    width: 460px;
-    display: flex;
-    justify-content: space-between;
+  &__text {
+    margin: 0 0 6px;
     font-size: 12px;
-    color: rgba(255, 255, 255, 1);
+    color: #fff;
+    opacity: 0.8;
   }
-  &__email{
 
-    & a {
-      font-size: 14px;
-      line-height: 1.5;
-      color: #FEE040;
-    }
+  &__email {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #FEE040;
   }
+
   &__tel {
     text-align: end;
-    & a{
-      font-size: 20px;
-    }
+  }
 
+  &__tel-link {
+    font-size: 20px;
   }
 }

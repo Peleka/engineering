@@ -2,7 +2,7 @@ import React from "react";
 import moduleClasses from "./Stages.module.scss"
 import globalClasses from "../../../App.module.scss"
 import image from "../../../images/unsplash.png"
-import photo from "../../../images/706181.jpg"
+import man from "./images/man.jpg"
 
 export const Stages = () => {
     return (
@@ -22,7 +22,7 @@ export const Stages = () => {
                     <p className={moduleClasses["stages__subtext"]}>Мы осматриваем здание, делаем замеры и проверяем наличие визуально заметных дефектов: трещин, коррозии, повреждения фундамента и т.д. </p>
                     <div className={moduleClasses["stages__quote-block"]}>
                         <div  className={moduleClasses["stages__block-photo"]}>
-                            <img  className={moduleClasses["stages__photo"]} src={photo}/>
+                            <img  className={moduleClasses["stages__photo"]} src={man}/>
                         </div>
                         <div className={moduleClasses["stages__quote"]}>
                             <p className={moduleClasses["stages__quote-text"]}>Задача этого этапа получить максимально полное представление о конструкции здания, условиях его эксплуатации и возможных слабых местах</p>

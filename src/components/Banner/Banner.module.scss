@@ -1,5 +1,4 @@
 .banner {
-  position: relative;
   text-align: center;
   padding: 40px 0 65px 0;
   background-image: linear-gradient(180deg, rgba(0, 78, 134, 0.8) 0%, rgba(10, 65, 104, 0.8) 100%), url('image/header_bgr.png');
@@ -7,72 +6,52 @@
   background-position: center;
   background-size: 100% 100%;
 
-  @media (max-width: 1440px) {
-    background-size: cover;
-  }
-  @media (max-width: 1024px) {
-    padding: 15px 0 35px 0;
-    margin-bottom: 10px;
-  }
-
   &__wrapper {
     display: flex;
-    align-items: start;
     justify-content: space-between;
+    align-items: end;
     text-align: start;
 
-    &--end {
-      margin-top: 235px;
+    &--margin {
+      margin: 0 120px 70px 120px;
     }
   }
 
-  &__block-text {
-    max-width: 580px;
-    text-align: start;
+  &__wrapper-text {
+    max-width: 340px;
+  }
+
+  &__title {
+    margin: 0 0 38px 0;
     font-size: 42px;
     line-height: 1.2;
     color: #fff;
   }
 
   &__text {
-    margin-top: 40px;
-    max-width: 390px;
     font-size: 20px;
     line-height: 1.7;
     color: #fff;
+
     &--small {
-      font-size: 15px;
+      font-size: 14px;
     }
   }
 
-  &__steps {
-    display: flex;
-    align-items: self-end;
-  }
-  &__image {
-    margin-right: 20px;
-  }
-
-  &__item {
-    display: flex;
-    max-width: 302px;
-    color: #fff;
-    font-size: 20px;
-  }
-
   &__video {
+    position: relative;
     width: 220px;
     height: 220px;
-    position: absolute;
-    bottom: 68px;
-    right: 143px;
     background: url("./image/stamp.svg") no-repeat;
   }
 
-  &__photo-men {
+  &__photo {
     border-radius: 50%;
     position: absolute;
-    top: 40px;
-    right: 38px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
   }
 }
