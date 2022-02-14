@@ -7,6 +7,8 @@ import project3 from "../../../images/photo (1).png"
 import project4 from "../../../images/04.png"
 import {v1} from "uuid";
 import {Card} from "./Card/Card";
+import {ScrollMenu, VisibilityContext} from "react-horizontal-scrolling-menu";
+import {LeftArrow, RightArrow} from "./arrows";
 
 export const Services = () => {
     const text1 = "Экспертиза отдельных конструкций, обмерные работы, определение прочности, расчет несущей способности" +
@@ -38,17 +40,26 @@ export const Services = () => {
                 <h1 className={moduleClasses["services__title"]}>Услуги</h1>
                 <p className={moduleClasses["services__text"]}>Выполняем как комплексное обследование, так и отдельные
                     виды работ</p>
-                <div className={moduleClasses["services__cards"]}>
-                    {cardsList.map(card => (
-                        <Card
-                            key={card.id}
-                            itemId={card.id}
-                            title={card.title}
-                            text={card.text}
-                            photo={card.image}
-                        />
-                    ))}
+                <div>
+                    <ScrollMenu
+                        onWheel={onWheel}
+                    >
+                        <div className={moduleClasses["services__cards"]}>
+
+                            {cardsList.map(card => (
+                                <Card
+                                    key={card.id}
+                                    itemId={card.id}
+                                    title={card.title}
+                                    text={card.text}
+                                    photo={card.image}
+                                />
+                            ))}
+
+                        </div>
+                    </ScrollMenu>
                 </div>
+
             </div>
         </div>
     )

@@ -1,9 +1,7 @@
 import React from "react";
 import moduleClasses from './Card.module.scss'
 
-
-export const Card = ({photo, title, text}) => {
-
+export const Card = ({photo, title, text, itemId}) => {
     return (
         <div className={moduleClasses["card"]}>
             <div className={moduleClasses["card__image"]}>

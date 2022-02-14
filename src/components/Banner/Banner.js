@@ -6,7 +6,9 @@ import photo from "../../images/706181.jpg"
 import one from "../../images/01.svg"
 import two from "../../images/02.svg"
 import three from "../../images/03.svg"
+import stamp from "./image/stamp.svg"
 import {Header} from "../Header/Header";
+
 
 export const Banner = () => {
 

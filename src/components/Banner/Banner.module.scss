@@ -45,10 +45,6 @@
     }
   }
 
-  &__photo-men {
-    border-radius: 50%;
-  }
-
   &__steps {
     display: flex;
     align-items: self-end;
@@ -65,8 +61,18 @@
   }
 
   &__video {
+    width: 220px;
+    height: 220px;
     position: absolute;
-    bottom: 150px;
-    right: 250px;
+    bottom: 68px;
+    right: 143px;
+    background: url("./image/stamp.svg") no-repeat;
+  }
+
+  &__photo-men {
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    right: 38px;
   }
 }

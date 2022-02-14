@@ -18,7 +18,6 @@ export const Stages = () => {
                     <div className={moduleClasses["stages__step1"]}>
                         <span className={moduleClasses["stages__span"]}>шаг №1.</span>
                         <h2 className={moduleClasses["stages__subtitle"]}>Подготовительные работы</h2>
-
                     </div>
                     <p className={moduleClasses["stages__subtext"]}>Мы осматриваем здание, делаем замеры и проверяем наличие визуально заметных дефектов: трещин, коррозии, повреждения фундамента и т.д. </p>
                     <div className={moduleClasses["stages__quote-block"]}>
@@ -28,7 +27,7 @@ export const Stages = () => {
                         <div className={moduleClasses["stages__quote"]}>
                             <p className={moduleClasses["stages__quote-text"]}>Задача этого этапа получить максимально полное представление о конструкции здания, условиях его эксплуатации и возможных слабых местах</p>
                             <p className={moduleClasses["stages__quote-author"]}>
-                                <span>Алексей</span>, обследователь и главный инженер проектов</p>
+                                <span className={`${moduleClasses["stages__quote-author"]} ${moduleClasses["stages__quote-author_span"]}`}>Алексей</span>, обследователь и главный инженер проектов</p>
                         </div>
                     </div>
                 </div>
