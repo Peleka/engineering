@@ -1,0 +1,56 @@
+.stage {
+  padding: 28px 80px 0;
+  width: 50%;
+
+  &__wrapper {
+    display: flex;
+    align-items: start;
+  }
+
+  &__number {
+    display: inline-block;
+    padding: 4px 10px;
+    margin-right: 20px;
+    background-color: #FEE040;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: bold;
+  }
+
+  &__text {
+    margin: 18px 0 32px 0;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  &__photo {
+    width: 70px;
+    height: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 7px solid white;
+    box-shadow: 10px 16px 26px 9px #cac9c9;
+  }
+
+  &__quote {
+    margin-bottom: 21px;
+    font-size: 15px;
+    color: #505050;
+    opacity: 0.7;
+
+    &--italic {
+      font-style: italic;
+
+      &:before {
+        content: '\201c';
+      }
+
+      &:after {
+        content: '\201d';
+      }
+    }
+  }
+}
