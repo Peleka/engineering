@@ -11,12 +11,11 @@ export const About = () => {
                     <h1 className={moduleClasses["about__title"]}>Мы работаем быстро<br/>
                         и наши отчеты проходят согласование с первого раза</h1>
                     <p className={moduleClasses["about__text"]}>Над вашим объектом работает целая команда:<br/>
-                        3 ГИПа (главных инженеров проектов) с опытом работы <br/>от 6 лет и 2 штатных сотрудника для
-                        камеральных работ</p>
+                        3 ГИПа (главных инженеров проектов) с опытом работы от 6 лет и 2 штатных сотрудника для камеральных работ</p>
                 </div>
                 <img className={moduleClasses["about__image"]} src={picture} alt={"picture"}/>
                 <ul className={moduleClasses["about__list"]}>
-                    <li className={moduleClasses["about__title-list"]}> Вы и Ваши архитекторы получаете:</li>
+                    <li className={`${moduleClasses["about__title"]} ${moduleClasses["about__title--small"]}`}> Вы и Ваши архитекторы получаете: </li>
                     <li className={moduleClasses["about__item"]}>Отчет на который на 100% можно положиться</li>
                     <li className={moduleClasses["about__item"]}>Экономию времени и прогнозируемость сроков</li>
                     <li className={moduleClasses["about__item"]}>Предварительные результаты сразу на месте</li>

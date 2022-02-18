@@ -1,32 +1,50 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0 0 152px 0;
+  margin-bottom: 152px;
+  @media (max-width: 1247px) {
+    margin-bottom: 100px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  &__logo {
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+  }
 
   &__wrapper {
-    min-width: 460px;
     display: flex;
     justify-content: space-between;
+    text-align: start;
   }
 
   &__text {
-    margin: 0 0 6px;
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     opacity: 0.8;
-  }
 
-  &__email {
-    font-size: 14px;
-    line-height: 1.5;
-    color: #FEE040;
+    &--yellow {
+      color: #FEE040;
+    }
+
+    &--big {
+      font-size: 20px;
+      @media (max-width: 767px) {
+        font-size: 16px;
+        opacity: 1;
+      }
+    }
   }
 
   &__tel {
     text-align: end;
-  }
-
-  &__tel-link {
-    font-size: 20px;
+    margin-left: 40px;
+    @media (max-width: 767px) {
+      margin-left: 0;
+    }
   }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import moduleClasses from './Banner.module.scss'
 import globalClasses from "../../App.module.scss"
 import man from "./image/man.jpg"
+import play from "./image/play.svg"
 import {Header} from "../Header/Header";
 import {Button} from "../Global/Button/Button";
 import {Steps} from "./List/Steps";
@@ -12,7 +13,7 @@ export const Banner = () => {
             <div className={globalClasses["container"]}>
                 <Header/>
                 <div className={`${moduleClasses["banner__wrapper"]} ${moduleClasses["banner__wrapper--margin"]}`}>
-                    <div>
+                    <div className={`${moduleClasses["banner__wrapper-text"]} ${moduleClasses["banner__wrapper-text--big"]}`}>
                         <h1 className={moduleClasses["banner__title"]}>Независимое обследование <br/>зданий и сооружений</h1>
                         <p className={moduleClasses["banner__text"]}>антенн, труб, теплосетей, канализаций<br/>и других объектов строительства</p>
                     </div>
@@ -23,9 +24,10 @@ export const Banner = () => {
                         </p>
                     </div>
                 </div>
-                <div className={moduleClasses["banner__wrapper"]}>
+                <div className={`${moduleClasses["banner__wrapper"]} ${moduleClasses["banner__wrapper--margin-small"]}`}>
                     <Steps/>
                     <div className={moduleClasses["banner__video"]}>
+                        <img className={moduleClasses["banner__play"]} src={play} alt={"play"}></img>
                         <img className={moduleClasses["banner__photo"]} src={man} alt={"man"}/>
                     </div>
                 </div>

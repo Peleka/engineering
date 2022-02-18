@@ -2,11 +2,19 @@
   display: flex;
   align-items: self-end;
 
+  @media (max-width: 1247px) {
+    flex-direction: column;
+  }
+
   &__item {
     display: flex;
     max-width: 302px;
     color: #fff;
     font-size: 20px;
+
+    @media (max-width: 1247px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__image {

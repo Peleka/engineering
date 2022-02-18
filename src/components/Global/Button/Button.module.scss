@@ -1,25 +1,40 @@
 .button {
   width: 100%;
-  margin: 0 0 40px 0;
+  position: relative;
+  margin-bottom: 40px;
   text-align: center;
   line-height: 1.15;
-  padding: 29px 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #FEE040;
   color: #000;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
   transition: all 0.3s ease 0s;
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
   &:before {
     content: '';
+    position: absolute;
     background-image: url("./images/download.svg");
-    width: 12px;
-    height: 12px;
+    background-repeat: no-repeat;
+    top: 31px;
+    left: 30px;
+    padding: 9px;
+    @media (max-width: 767px) {
+      top: 15px;
+      left: 42px;
+    }
   }
 
   &:hover {
     cursor: pointer;
-    opacity: 0.8;
+    box-shadow: 0 0 30px 3px #fff;
   }
 }
