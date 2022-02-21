@@ -1,6 +1,7 @@
 .banner {
   text-align: center;
-  padding: 40px 0 65px 0;
+  padding-top: 40px;
+  padding-bottom: 65px;
   background-image: linear-gradient(180deg, rgba(0, 78, 134, 0.8) 0%, rgba(10, 65, 104, 0.8) 100%), url('image/header_bgr.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -9,21 +10,17 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
     text-align: start;
-    @media (max-width: 959px) {
+    @media (max-width: 767px) {
       flex-direction: column;
       align-items: center;
     }
 
     &--margin {
-      margin-left: 120px;
-      margin-right: 120px;
+      margin-left: 50px;
+      margin-right: 50px;
       margin-bottom: 70px;
-      @media (max-width: 1247px) {
-        margin-left: 40px;
-        margin-right: 40px;
-      }
       @media (max-width: 767px) {
         margin-bottom: 26px;
       }
@@ -46,9 +43,6 @@
 
     &--big {
       max-width: 580px;
-      @media (max-width: 959px) {
-        text-align: center;
-      }
     }
   }
 

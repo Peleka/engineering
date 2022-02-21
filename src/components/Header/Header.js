@@ -1,6 +1,7 @@
 import React from "react";
 import moduleClasses from "./Header.module.scss"
 import logo from "./../../images/logo.svg"
+import {Contacts} from "../Global/Contacts/Contacts";
 
 export const Header = () => {
     return (
@@ -8,12 +9,22 @@ export const Header = () => {
             <img className={moduleClasses["header__logo"]} src={logo} alt={"logo"}/>
             <div className={moduleClasses["header__wrapper"]}>
                 <div>
-                    <p className={moduleClasses["header__text"]}>Пишите нам на email</p>
-                    <a className={`${moduleClasses["header__text"]} ${moduleClasses["header__text--yellow"]}`} href={'info@diagnistics.by'}>info@diagnistics.by</a>
+                    <Contacts
+                        text={"Пишите нам на email"}
+                        info={"info@diagnistics.by"}
+                        link={"info@diagnistics.by"}
+                        textStyle={moduleClasses["header__text"]}
+                        textFeature={moduleClasses["header__text--yellow"]}
+                    />
                 </div>
                 <div className={moduleClasses["header__tel"]}>
-                    <p className={moduleClasses["header__text"]}>Есть вопросы? Звоните!</p>
-                    <a  className={`${moduleClasses["header__text"]} ${moduleClasses["header__text--big"]}`} href={'+375 (29) 456-45-45'}>+375 (29) 456-45-45</a>
+                    <Contacts
+                        text={"Есть вопросы? Звоните!"}
+                        info={"+375 (29) 456-45-45"}
+                        link={"+375 (29) 456-45-45"}
+                        textStyle={moduleClasses["header__text"]}
+                        textFeature={moduleClasses["header__text--big"]}
+                    />
                 </div>
             </div>
         </header>
