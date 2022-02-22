@@ -1,6 +1,7 @@
 {
   "name": "engineering",
   "version": "0.1.0",
+  "homepage":"https://Peleka.github.io/engineering",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
