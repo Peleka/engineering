@@ -41,6 +41,15 @@ body {
   color: #252b42;
   font-weight: 500;
   font-family: "Open Sans";
+
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 78, 134, 0.9);
+    margin: 0;
+  }
 }
 
 .container {
